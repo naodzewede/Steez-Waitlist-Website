@@ -1,0 +1,44 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+
+:root {
+    
+    /* fonts */
+    --font-montserrat: Montserrat;
+    --font-jost: Jost;
+    
+    /* font sizes */
+    --font-size-mini: 15px;
+    --font-size-xl: 20px;
+    --font-size-21xl: 40px;
+    
+    /* Colors */
+    --color-darkgray-100: #a9a9a9;
+    --color-darkgray-200: #9f9f9f;
+    --color-darkgray-300: rgba(173, 171, 171, 0.5);
+    --color-gray-100: #898989;
+    --color-gray-200: rgba(137, 137, 137, 0.5);
+    --color-silver: rgba(201, 201, 201, 0.5);
+    --color-black: #000;
+    --color-darkslategray: #464646;
+    
+    /* Border radiuses */
+    --br-3xs: 10px;
+    
+}
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
