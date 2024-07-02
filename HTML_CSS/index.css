@@ -14,7 +14,7 @@
     font-size: 25px;
     font-weight: 500;
     font-family: var(--font-jost);
-    animation: fadeInAnimation ease 5s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -28,7 +28,7 @@
     color: var(--color-gray-100);
     border: none;
     background: none;
-    animation: fadeInAnimation ease 5s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -45,7 +45,7 @@
     color: var(--color-gray-100);
     border: none;
     background: none;
-    animation: fadeInAnimation ease 5s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     text-decoration:none;
@@ -63,7 +63,7 @@
     color: var(--color-gray-100);
     border: none;
     background: none;
-    animation: fadeInAnimation ease 5s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     text-decoration:none;
@@ -80,15 +80,166 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    animation: fadeInAnimation ease 12s;
+    animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.motto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+.trans-rec {
+    position: relative;
+    width: 600px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: linear-gradient(123deg, #E0E0E0 25.75%, rgba(222, 222, 222, 0.37) 79.02%);
+}
+.teamText {
+    color: #2E2E2E;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 125px;
+}
+
+.got-it {
+    color: #439668;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 25px;
+    display: none;
+}
+
+/* #naodpic {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 2040px;
+    left: 450px;
+    border-radius: 50%;
+}
+
+#naodpic:hover {
+    height: 130px;
+    width: 130px;
+    top: 2037.5px;
+    left: 447.5px;
+}
+
+#sampic {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 2040px;
+    left: 885px;
+    border-radius: 50%;
+}
+
+#sampic:hover {
+    height: 130px;
+    width: 130px;
+    top: 2037.5px;
+    left: 882.5px;
+}
+
+#troypic {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 2040px;
+    left: 1320px;
+    border-radius: 50%;
+}
+
+#troypic:hover {
+    height: 130px;
+    width: 130px;
+    top: 2037.5px;
+    left: 1317.5px;
+}
+
+.naod-name {
+    position: absolute;
+    top: 2190px;
+    left: 450px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-jost);
+    color: #444444;
+
+}
+
+.sam-name {
+    position: absolute;
+    top: 2190px;
+    left: 897px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-jost);
+    color: #444444;
+
+}
+
+.troy-name {
+    position: absolute;
+    top: 2190px;
+    left: 1332px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-jost);
+    color: #444444;
+
+}
+
+.naod-role {
+    position: absolute;
+    top: 2215px;
+    left: 393px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-jost);
+    color: #616161;
+
+}
+
+.sam-role {
+    position: absolute;
+    top: 2215px;
+    left: 840px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-jost);
+    color: #616161;
+
+}
+
+.troy-role {
+    position: absolute;
+    top: 2215px;
+    left: 1275px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-jost);
+    color: #616161;
+
+} */
 .desktop-1 {
     width: 100%;
     position: relative;
     background: linear-gradient(180deg, #ffffff, #e2e2e2, #f1f1f1);
-    height: 1900px;
+    height: 2000px;
     overflow: hidden;
     text-align: center;
     font-size: var(--font-size-xl);
