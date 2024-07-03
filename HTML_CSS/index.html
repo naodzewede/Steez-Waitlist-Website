@@ -59,41 +59,6 @@
 			background-size: 200% 200%;
 			animation: gradientAnimation 5s ease infinite;
 		}
-		.join-motto {
-			position: relative;
-			color: #3b3b3b;
-			text-align: center;
-			font-family: Noto Sans;
-			font-size: 35px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: normal;
-			margin-right: 25px;
-			animation: fadein ease 2s;
-		}
-		.create-motto {
-			position: relative;
-			color: #3b3b3b;
-			text-align: center;
-			font-family: Noto Sans;
-			font-size: 35px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: normal;
-			animation: fadein ease 4s;
-		}
-		.connect-motto {
-			position: relative;
-			color: #3b3b3b;
-			text-align: center;
-			font-family: Noto Sans;
-			font-size: 35px;
-			font-style: normal;
-			font-weight: 700;
-			line-height: normal;
-			margin-left: 25px;
-			animation: fadein ease 6s;
-		}
 		.rectangle {
             width: 100%;
             height: 550px;
@@ -112,7 +77,7 @@
         }
         #home {
 			animation: floating 3s ease-in-out infinite;
-            position: absolute;
+            position: relative;
             max-width: 15%;
             height: auto;
             left: 40px;
@@ -121,7 +86,7 @@
         }
         #groups {
 			animation: floating 2.5s ease-in-out infinite;
-            position: absolute;
+            position: relative;
             max-width: 15%;
             height: auto;
             left: 1235px;
@@ -129,7 +94,7 @@
             transform: scale(0.25);
         }
 		.dive {
-            color: #444444;
+            color: #2e2e2e;
             text-align: center;
             font-family: Montserrat;
 			margin-top: -480px;
@@ -151,7 +116,7 @@
             margin: auto;
         }
         .create {
-            color: #444444;
+            color: #2e2e2e;
             text-align: center;
             font-family: Montserrat;
             font-size: 40px;
@@ -176,7 +141,7 @@
 		.join-the-waitlist {
 			color: #2E2E2E;
 			text-align: center;
-			font-family: Montserrat;
+			font-family: Noto Sans;
 			font-size: 50px;
 			font-style: normal;
 			font-weight: 700;
@@ -241,9 +206,12 @@
 			background: #2e47a1;
 			border: none;
 			position: center;
+			transition-duration: 0.4s;
+			cursor: pointer;
+			display: inline-block;
 		}
 		#submit:hover {
-			background: #203274;
+			background: #0b216e;
 		}
 
 		#joinText {
@@ -296,9 +264,15 @@
     	<div class="st-fashion-networking">1st Fashion Networking App</div>
 		<div class="steez1">Steez</div>
 		<div class="motto">
-			<div class="join-motto">Join.</div>
-			<div class="create-motto">Create.</div>
-			<div class="connect-motto">Connect.</div>
+			<div class="join-motto-rec">
+				<div class="join-motto">Join.</div>
+			</div>
+			<div class="create-motto-rec">
+				<div class="create-motto">Create.</div>
+			</div>
+			<div class="connect-motto-rec">
+				<div class="connect-motto">Connect.</div>
+			</div>
 		</div>
 			<div class="rectangle fade-in"></div>
 			<div id="home" class="fade-in">
@@ -318,13 +292,10 @@
 					});
 				});
 			</script>
-			
-				<div class="recWhite fade-in">
-					<div class="dive fade-in">Dive</div>
-					<div class="into-vibrant-communities fade-in">into vibrant communities tailored to your specific style subgenres, chat with like-minded individuals, and showcase your unique fashion sense through photos.</div>
-					<div class="create fade-in">Create</div>
-					<div class="tight-knit-communities-and fade-in">tight-knit communities and utilizing advanced data analytics, Steez delivers unparalleled experiences and insights for both users and businesses.</div>
-				</div>
+			<div class="dive fade-in">Dive</div>
+			<div class="into-vibrant-communities fade-in">into vibrant communities tailored to your specific style subgenres, chat with like-minded individuals, and showcase your unique fashion sense through photos.</div>
+			<div class="create fade-in">Create</div>
+			<div class="tight-knit-communities-and fade-in">tight-knit communities and utilizing advanced data analytics, Steez delivers unparalleled experiences and insights for both users and businesses.</div>
 			<div class="join-the-waitlist fade-in">Join The Waitlist</div>
 			<form id="waitlistForm">
 				<div class="enter-name fade-in">
@@ -343,7 +314,7 @@
 					});
 				</script>
 				<div class="enter-email fade-in">
-					<input type="text" id="email" required minlength="2" size="8" placeholder=" " />
+					<input type="email" id="email" required minlength="2" size="8" placeholder=" "/>
 					<label for="email" id="emailText">Enter Your Email</label>
 				</div>
 				<script>

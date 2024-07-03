@@ -90,15 +90,87 @@
     justify-content: center;
     margin-top: 75px;
 }
-.trans-rec {
+.join-motto-rec {
+    width: 105px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(117deg, #85b9eb 0%, #c5e9ee 97.43%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    animation: fadein ease 2s;
+}
+.join-motto {
     position: relative;
-    width: 600px;
-    height: 150px;
+    color: #1b5780;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    animation: fadein ease 2s;
+}
+.create-motto-rec {
+    width: 150px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(117deg, #97eca3 0%, #c5eec7 97.43%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    animation: fadein ease 4s;
+}
+.create-motto {
+    position: relative;
+    color: #288d3e;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    animation: fadein ease 4s;
+}
+.connect-motto-rec {
+    width: 170px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(117deg, #eca897 0%, #eed1c5 97.43%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    animation: fadein ease 6s;
+}
+.connect-motto {
+    position: relative;
+    color: #862922;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    animation: fadein ease 6s;
+}
+/* .textRec {
+    width: 850px;
+    height: 525px;
     flex-shrink: 0;
     border-radius: 10px;
     border: 2px solid #FFF;
     background: linear-gradient(123deg, #E0E0E0 25.75%, rgba(222, 222, 222, 0.37) 79.02%);
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 500px;
+} */
 .teamText {
     color: #2E2E2E;
     text-align: center;
