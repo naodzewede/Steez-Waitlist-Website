@@ -18,6 +18,12 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.top-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
 #about {
     position: absolute;
     top: 25px;
@@ -74,7 +80,7 @@
 .st-fashion-networking {
     color: #5C5C5C;
     text-align: center;
-    margin-top: 425px;
+    margin-top: 300px;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -91,7 +97,8 @@
     margin-top: 75px;
 }
 .join-motto-rec {
-    width: 105px;
+    width: 100%;
+    max-width: 105px;
     height: 50px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -114,7 +121,8 @@
     animation: fadein ease 2s;
 }
 .create-motto-rec {
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     height: 50px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -137,7 +145,8 @@
     animation: fadein ease 4s;
 }
 .connect-motto-rec {
-    width: 170px;
+    width: 100%;
+    max-width: 170px;
     height: 50px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -158,6 +167,21 @@
     font-weight: 700;
     line-height: normal;
     animation: fadein ease 6s;
+}
+@media (max-width: 480px) {
+    .join-motto-rec, .join-motto{
+        margin-right: 2.5px;
+    }
+}
+@media (max-width: 480px) {
+    .create-motto-rec, .create-motto{
+        margin-left: 5px;
+    }
+}
+@media (max-width: 480px) {
+    .connect-motto-rec, .connect-motto{
+        margin-left: 7.5px;
+    }
 }
 /* .textRec {
     width: 850px;
