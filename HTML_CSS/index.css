@@ -18,16 +18,18 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
 .top-buttons {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    margin-top: 75px;
-}
-#about {
     position: absolute;
-    top: 25px;
-    left: 150px;
+    margin-left: 150px;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+#about, #contact, #joinTop {
     font-size: 17.5px;
     font-weight: 500;
     font-family: var(--font-jost);
@@ -37,46 +39,14 @@
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    text-decoration: none;
+    cursor: pointer;
 }
-#about:hover {
+
+#about:hover, #contact:hover, #joinTop:hover {
     color: #4b4b4b;
 }
-#contact {
-    position: absolute;
-    top: 26px;
-    left: 225px;
-    font-size: 17.5px;
-    font-weight: 500;
-    font-family: var(--font-jost);
-    color: var(--color-gray-100);
-    border: none;
-    background: none;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    text-decoration:none;
-}
-#contact:hover {
-    color: #4b4b4b;
-}
-#joinTop {
-    position: absolute;
-    top: 25px;
-    left: 325px;
-    font-size: 17.5px;
-    font-weight: 500;
-    font-family: var(--font-jost);
-    color: var(--color-gray-100);
-    border: none;
-    background: none;
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    text-decoration:none;
-}
-#joinTop:hover {
-    color: #4b4b4b;
-}
+
 .st-fashion-networking {
     color: #5C5C5C;
     text-align: center;
@@ -94,7 +64,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 50px;
+    gap: 25px;
 }
 .join-motto-rec {
     width: 100%;
@@ -106,7 +77,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
     animation: fadein ease 2s;
 }
 .join-motto {
@@ -130,7 +100,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
     animation: fadein ease 4s;
 }
 .create-motto {
@@ -154,7 +123,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15px;
     animation: fadein ease 6s;
 }
 .connect-motto {
@@ -168,19 +136,27 @@
     line-height: normal;
     animation: fadein ease 6s;
 }
-@media (max-width: 480px) {
-    .join-motto-rec, .join-motto{
-        margin-right: 2.5px;
+@media (max-width: 500px) {
+    .motto{
+        gap: 10px;
     }
-}
-@media (max-width: 480px) {
-    .create-motto-rec, .create-motto{
-        margin-left: 5px;
+    .join-motto {
+        font-size: 25px;
     }
-}
-@media (max-width: 480px) {
-    .connect-motto-rec, .connect-motto{
-        margin-left: 7.5px;
+    .create-motto {
+        font-size: 25px;
+    }
+    .connect-motto {
+        font-size: 25px;
+    }
+    .join-motto-rec {
+        max-width: 75px;
+    }
+    .create-motto-rec {
+        max-width: 100px;
+    }
+    .connect-motto-rec {
+        max-width: 125px;
     }
 }
 /* .textRec {
@@ -335,7 +311,7 @@
     width: 100%;
     position: relative;
     background: linear-gradient(180deg, #ffffff, #e2e2e2, #f1f1f1);
-    height: 2000px;
+    height: 1850px;
     overflow: hidden;
     text-align: center;
     font-size: var(--font-size-xl);

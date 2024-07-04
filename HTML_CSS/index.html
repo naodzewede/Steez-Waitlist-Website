@@ -45,7 +45,7 @@
 		}
 
 		.steez1 {
-			background: linear-gradient(90deg, #70DDFB 45%, #EEE275 48%, #FD86ED 58%, #F3776E 64%);
+			background: linear-gradient(90deg, #96def1 23%, #f5eb97 34%, #f09de5 58%, #f18880 64%);
 			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
@@ -63,9 +63,9 @@
             width: 100%;
             height: 550px;
 			margin-top: 250px;
-            background: linear-gradient(90deg, #adebfc 22%, #EEE275 31%, #e295c4 68%, #e4867f 81%);
-			border: 1.5px solid #f7f7f7;
-            animation: gradientAnimation 8s ease infinite;
+            background: linear-gradient(90deg, #bdeefc 22%, #f1eaa4 31%, #eeaed6 68%, #f5a59f 81%);
+			border: 1px solid #f7f7f7;
+            animation: gradientAnimation 5s ease infinite;
             background-size: 200% 200%; /* Ensure background size matches */
 		}
         .fade-in {
@@ -80,28 +80,30 @@
 			width: 100%;
 			max-width: 700px;
 			height: auto;
-			animation: floating 3s ease-in-out infinite;
+			z-index: 2;
 		}
 
 		#home {
-			top: -100px;
+			top: -185px;
 			left: -5%;
 			transform: translate(-50%, 0);
+			animation: floating 3s ease-in-out infinite;
 		}
 
 		#groups {
-			top: 75px;
+			top: -20px;
 			left: 55%;
 			transform: translate(-50%, 0);
+			animation: floating 2.75s ease-in-out infinite;
 		}
 		@media (max-width: 1750px) {
 			#home {
-				top: -100px;
-				left: -5%;
+				top: -185px;
+				left: -9%;
 			}
 			#groups {
-				top: 75px;
-				left: 53%;
+				top: -20px;
+				left: 54%;
 			}
 		}
 		@media (max-width: 1600px) {
@@ -109,11 +111,11 @@
 				scale: 0.95;
 			}
 			#home {
-				top: -100px;
-				left: -10%;
+				top: -185px;
+				left: -12%;
 			}
 			#groups {
-				top: 75px;
+				top: -20px;
 				left: 50%;
 			}
 		}
@@ -122,11 +124,11 @@
 				scale: 0.85;
 			}
 			#home {
-				top: -100px;
-				left: -15%;
+				top: -185px;
+				left: -20%;
 			}
 			#groups {
-				top: 75px;
+				top: -20px;
 				left: 45%;
 			}
 		}
@@ -135,11 +137,11 @@
 				scale: 0.75;
 			}
 			#home {
-				top: -125px;
-				left: -15%;
+				top: -220px;
+				left: -20%;
 			}
 			#groups {
-				top: 100px;
+				top: 5px;
 				left: 50%;
 			}
 		}
@@ -148,12 +150,12 @@
 				scale: 0.65;
 			}
 			#home {
-				top: -130px;
-				left: -22%;
+				top: -250px;
+				left: -27%;
 			}
 			#groups {
-				top: 100px;
-				left: 45%;
+				top: 5px;
+				left: 48%;
 			}
 		}
 		@media (max-width: 1000px) {
@@ -161,68 +163,84 @@
 				display: none;
 			}
 		}
-
 		.about-container {
 			position: relative;
-			display: table-cell, center;
-			vertical-align: middle;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+		.transRec {
+			position: absolute;
+			margin-bottom: 37.5px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 10px;
+			border: 1px solid #FFF;
+			background: linear-gradient(123deg, #e9e9e9da 25.75%, rgba(222, 222, 222, 0.37) 79.02%);
+			width: 100%;
+			max-width: 500px;
+			height: 515px;
+			z-index: 1;
+		}
+		@media (max-width: 500px) {
+			.transRec {
+				max-width: 425px;
+			}
+			
+		}
+		.dive, .into-vibrant-communities, .create, .tight-knit-communities-and {
+			position: relative;
+			z-index: 2;
 		}
 		.dive {
-            color: #2e2e2e;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 700;
-			margin-top: -480px;
-            line-height: normal;
-        }
-        .into-vibrant-communities {
-            width: 100%;
-			max-width: 400px;
-            height: 150px;
-            color: #525252;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 20px;
-            font-style: italic;
-            font-weight: 500;
-            line-height: normal;
-            margin: auto;
-        }
-        .create {
-            color: #2e2e2e;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            margin-top: 50px;
-        }
-        .tight-knit-communities-and {
-            color: #525252;
-            text-align: center;
-            font-family: Montserrat;
-            font-size: 20px;
-            font-style: italic;
-            font-weight: 500;
-            line-height: normal;
-            width: 100%;
-			max-width: 400px;
-            height: 150px;
-            flex-shrink: 0;
-            margin: auto;
-        }
+			color: #2e2e2e;
+			font-family: Montserrat;
+			font-size: 40px;
+			font-weight: 700;
+			margin-top: -495px;
+		}
+
+		.into-vibrant-communities {
+			max-width: 350px;
+			height: 150px;
+			color: #525252;
+			font-family: Montserrat;
+			font-size: 20px;
+			font-style: italic;
+			font-weight: 500;
+			margin: auto;
+		}
+
+		.create {
+			color: #2e2e2e;
+			font-family: Montserrat;
+			font-size: 40px;
+			font-weight: 700;
+			margin-top: 50px;
+		}
+
+		.tight-knit-communities-and {
+			color: #525252;
+			max-width: 350px;
+			height: 150px;
+			font-family: Montserrat;
+			font-size: 20px;
+			font-style: italic;
+			font-weight: 500;
+			margin: auto;
+		}
+
 		.join-the-waitlist {
 			color: #2E2E2E;
 			text-align: center;
 			font-family: Noto Sans;
-			font-size: 50px;
+			font-size: 40px;
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
-			margin-top: 175px;
+			margin-top: 125px;
 		}
 		.container {
 			display: flex;
@@ -317,28 +335,26 @@
 <body>
   	
   	<div class="desktop-1">
-    	<div class="steez">Steez</div>
-		<div class = "top-buttons">
+		<div class="steez">Steez</div>
+		<div class="top-buttons">
 			<div class="about"> 
-				<button onclick = "scrollAbout()" id = 'about'>About</button>
+				<button onclick="scrollAbout()" id="about">About</button>
 			</div>
-			<script>
-				function scrollAbout() {
-					window.scrollTo({ top: 600, behavior: 'smooth' })
-				}
-			</script>
 			<div class="contact-us">
-				<a href="https://www.instagram.com/" id = "contact">Contact Us</a>
+				<a href="https://www.instagram.com/steezapp/?hl=en" id="contact" target = "_blank">Contact Us</a>
 			</div>
 			<div class="join">
-				<button onclick = "scrollJoin()" id = 'joinTop'>Join</button>
+				<button onclick="scrollJoin()" id="joinTop">Join</button>
 			</div>
-			<script>
-				function scrollJoin() {
-					window.scrollTo({ top: 1500, behavior: 'smooth' })
-				}
-			</script>
 		</div>
+		<script>
+			function scrollAbout() {
+				window.scrollTo({ top: 675, behavior: 'smooth' });
+			}
+			function scrollJoin() {
+				window.scrollTo({ top: 1500, behavior: 'smooth' });
+			}
+		</script>		
     	<div class="st-fashion-networking">The 1st Fashion Networking App</div>
 		<div class="steez1">Steez</div>
 		<div class="motto">
@@ -371,6 +387,7 @@
 				});
 			</script>
 			<div class="about-container">
+				<div class="transRec fade-in"></div>
 				<div class="dive fade-in">Dive</div>
 				<div class="into-vibrant-communities fade-in">into vibrant communities tailored to your specific style subgenres, chat with like-minded individuals, and showcase your unique fashion sense through photos.</div>
 				<div class="create fade-in">Create</div>
