@@ -7,13 +7,12 @@
         opacity: 1;
     }
 }
-.steez {
-    font-size: 25px;
-    font-weight: 500;
-    font-family: var(--font-jost);
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+
+.steez-logo {
+    width: 100%;
+    max-width: 29.48px;
+    scale: 0.075;
+    margin-top: -15px;
 }
 
 .top-buttons {
@@ -22,7 +21,7 @@
     align-items: center;
     position: absolute;
     margin-left: 35px;
-    margin-top: 25px;
+    margin-top: -270px;
     gap: 40px;
 }
 
@@ -31,6 +30,7 @@
     font-weight: 500;
     width: 100%;
     max-width: 100px;
+    margin-left: 15px;
     font-family: var(--font-jost);
     color: var(--color-gray-100);
     border: none;
@@ -46,6 +46,9 @@
         margin-left: 10px;
         gap: 30px;
     
+    }
+    #about, #contact, #joinTop {
+        margin-left: 5px;
     }
 }
 #about:hover, #contact:hover, #joinTop:hover {
