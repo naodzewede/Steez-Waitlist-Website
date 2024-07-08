@@ -36,7 +36,7 @@
 
 		@keyframes floating {
 			0% { transform: scale(0.25) translate(0, 0px); }
-			50% { transform: scale(0.25) translate(0, 30px); }
+			50% { transform: scale(0.25) translate(0, 45px); }
 			100% { transform: scale(0.25) translate(0, 0px); }
 		}
 
@@ -83,19 +83,23 @@
 			height: auto;
 			z-index: 2;
 		}
-
 		#home {
 			top: -185px;
 			left: -5%;
 			transform: translate(-50%, 0);
 			animation: floating 3s ease-in-out infinite;
 		}
-
+		#home:hover {
+			animation: floating 1.5s ease-in-out infinite;
+		}
 		#groups {
 			top: -20px;
 			left: 55%;
 			transform: translate(-50%, 0);
 			animation: floating 2.75s ease-in-out infinite;
+		}
+		#groups:hover {
+			animation: floating 1.375s ease-in-out infinite;
 		}
 		@media (max-width: 2200px) {
 			#home {
