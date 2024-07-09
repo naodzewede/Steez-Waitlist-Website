@@ -467,62 +467,26 @@
 					});
 				</script>
 				<div class="Join fade-in">
-					<button type="submit" id="submit"><span id="joinText">Join</span></button>
+					<button 
+						type="submit" 
+						id="submit" 
+						class="g-recaptcha" 
+						data-sitekey="6LexRgkqAAAAAJhKK-PpiU28aMzTHu7R77T-kSLM" 
+						data-callback='onSubmit' 
+						data-action='submit'><span id="joinText">Join</span>
+					</button>
 				</div>
+				<script>
+					function onSubmit(token) {
+					  document.getElementById("demo-form").submit();
+					}
+				  </script>
 				<div class = "got-it fade-in">Thank you! We'll let you know when Steez is ready.</div>
 			</form>
 		<script src = "https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js"></script>
 		<script src = "db/database.js"></script>
 		<div class = "bottomRec fade-in"></div>
-		<!-- <div class = "team fade-in">
-			<div class = "teamText">Meet Our Team</div>
-				<div class = "Naod">
-					<div class = "naod-name">Naod Zewede</div>
-					<a href="https://www.linkedin.com/in/naod-zewede-536111280/">
-						<img id = "naodpic" src="profilepics/naod.jpg" alt="">
-					</a>
-					<div class = "naod-role">CEO of Ingoude Company</div>
-				</div>
-				<style>
-					.Naod {
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						justify-content: center;
-						margin-top: 50px;
-					}
-				</style>
-				<div class = "Sam">
-					<div class = "sam-name">Sam Yacob</div>
-					<a href="https://www.linkedin.com/in/samuel-yacob/">
-						<img id = "sampic" src="profilepics/sam.jpg" alt="">
-					</a>
-					<div class = "sam-role">CEO of Ingoude Company</div>
-				</div>
-				<style>
-					.Sam {
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						justify-content: center;
-						margin-top: 50px;
-					}
-				</style>
-				<div class = "Troy">
-					<div class = "troy-name">Troy Waller</div>
-					<img id = "troypic" src="profilepics/troy.png" alt="">
-					<div class = "troy-role">CEO of Ingoude Company</div>
-				</div>
-				<style>
-					.Troy {
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-						justify-content: center;
-						margin-top: 50px;
-					}
-				</style>
-		</div> -->
   	</div>
 </body>
 </html>

@@ -167,18 +167,6 @@
         max-width: 125px;
     }
 }
-/* .textRec {
-    width: 850px;
-    height: 525px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 2px solid #FFF;
-    background: linear-gradient(123deg, #E0E0E0 25.75%, rgba(222, 222, 222, 0.37) 79.02%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 500px;
-} */
 .teamText {
     color: #2E2E2E;
     text-align: center;
@@ -201,120 +189,6 @@
     margin-top: 25px;
     display: none;
 }
-
-/* #naodpic {
-    position: absolute;
-    height: 125px;
-    width: 125px;
-    top: 2040px;
-    left: 450px;
-    border-radius: 50%;
-}
-
-#naodpic:hover {
-    height: 130px;
-    width: 130px;
-    top: 2037.5px;
-    left: 447.5px;
-}
-
-#sampic {
-    position: absolute;
-    height: 125px;
-    width: 125px;
-    top: 2040px;
-    left: 885px;
-    border-radius: 50%;
-}
-
-#sampic:hover {
-    height: 130px;
-    width: 130px;
-    top: 2037.5px;
-    left: 882.5px;
-}
-
-#troypic {
-    position: absolute;
-    height: 125px;
-    width: 125px;
-    top: 2040px;
-    left: 1320px;
-    border-radius: 50%;
-}
-
-#troypic:hover {
-    height: 130px;
-    width: 130px;
-    top: 2037.5px;
-    left: 1317.5px;
-}
-
-.naod-name {
-    position: absolute;
-    top: 2190px;
-    left: 450px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--font-jost);
-    color: #444444;
-
-}
-
-.sam-name {
-    position: absolute;
-    top: 2190px;
-    left: 897px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--font-jost);
-    color: #444444;
-
-}
-
-.troy-name {
-    position: absolute;
-    top: 2190px;
-    left: 1332px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--font-jost);
-    color: #444444;
-
-}
-
-.naod-role {
-    position: absolute;
-    top: 2215px;
-    left: 393px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--font-jost);
-    color: #616161;
-
-}
-
-.sam-role {
-    position: absolute;
-    top: 2215px;
-    left: 840px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--font-jost);
-    color: #616161;
-
-}
-
-.troy-role {
-    position: absolute;
-    top: 2215px;
-    left: 1275px;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--font-jost);
-    color: #616161;
-
-} */
 .desktop-1 {
     width: 100%;
     position: relative;
@@ -326,4 +200,3 @@
     color: var(--color-black);
     font-family: var(--font-montserrat);
 }
-

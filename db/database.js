@@ -39,11 +39,11 @@ function submitForm(e) {
 }
 
 const saveForm = (name, email) => {
-    var newWaitlistFormDb = waitlistFormDb.push();
-    newWaitlistFormDb.set({
-        name: name,
-        email: email
-    });
+        var newWaitlistFormDb = waitlistFormDb.push();
+        newWaitlistFormDb.set({
+            name: name,
+            email: email
+        });
 }
 
 const getElementVal = (id) => {
