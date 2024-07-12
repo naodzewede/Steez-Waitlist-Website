@@ -39,15 +39,10 @@ function submitForm(e) {
 }
 
 const saveForm = (name, email) => {
-    e.preventDefault();
-        grecaptcha.ready(function() {
-            grecaptcha.execute('_6LexRgkqAAAAAJhKK-PpiU28aMzTHu7R77T-kSLM', {action: 'submit'}).then(function(token) {
-                var newWaitlistFormDb = waitlistFormDb.push();
-                newWaitlistFormDb.set({
-                    name: name,
-                    email: email
-                });
-            });
+        var newWaitlistFormDb = waitlistFormDb.push();
+        newWaitlistFormDb.set({
+            name: name,
+            email: email
         });
 }
 
