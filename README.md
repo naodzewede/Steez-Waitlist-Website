@@ -1,43 +1,52 @@
-Steez Waitlist Website
-Welcome to the official waitlist website for the upcoming fashion app, Steez. This site allows users to sign up and secure their spot on our waitlist to be among the first to experience our revolutionary fashion networking platform.
+# Steez Waitlist Website
 
-Live Site
-Check out the live site here.
+Welcome to the official waitlist website for the upcoming fashion app, **Steez**. This site allows users to sign up and secure their spot on our waitlist to be among the first to experience our revolutionary fashion networking platform.
 
-Project Structure
+## Live Site
+
+Check out the live site [here](http://www.thesteezapp.com).
+
+## Project Structure
+
 This project is built using HTML, CSS, and JavaScript. The main files include:
 
-index.html - The main HTML file containing the structure of the website.
-index.css - The CSS file that styles the website.
-database.js - The JavaScript file that handles Firebase integration and form submissions.
-Features
-Responsive Design: The site is designed to be fully responsive and works seamlessly across different devices and screen sizes.
-Firebase Integration: The waitlist form is integrated with Firebase to securely store user data.
-Animations: Smooth animations for enhanced user experience.
-User Notifications: Visual feedback to users upon form submission.
-Technologies Used
-HTML5: For the basic structure of the website.
-CSS3: For styling the website with animations and responsiveness.
-JavaScript: For handling form submissions and Firebase integration.
-Firebase: For real-time database and secure storage of user data.
-How to Use
-Clone the repository:
+- `index.html` - The main HTML file containing the structure of the website.
+- `index.css` - The CSS file that styles the website.
+- `database.js` - The JavaScript file that handles Firebase integration and form submissions.
 
-bash
-Copy code
-git clone https://github.com/your-username/steez-waitlist.git
-Navigate to the project directory:
+## Features
 
-bash
-Copy code
-cd steez-waitlist
-Open index.html in your preferred browser.
+- **Responsive Design**: The site is designed to be fully responsive and works seamlessly across different devices and screen sizes.
+- **Firebase Integration**: The waitlist form is integrated with Firebase to securely store user data.
+- **Animations**: Smooth animations for enhanced user experience.
+- **User Notifications**: Visual feedback to users upon form submission.
 
-Firebase Configuration
-Ensure your Firebase project is set up and replace the configuration details in database.js with your own Firebase project details.
+## Technologies Used
 
-javascript
-Copy code
+- **HTML5**: For the basic structure of the website.
+- **CSS3**: For styling the website with animations and responsiveness.
+- **JavaScript**: For handling form submissions and Firebase integration.
+- **Firebase**: For real-time database and secure storage of user data.
+
+## How to Use
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/steez-waitlist-website.git
+   ```
+
+2. **Navigate to the project directory**:
+   ```bash
+   cd steez-waitlist-website
+   ```
+
+3. **Open `index.html` in your preferred browser**.
+
+## Firebase Configuration
+
+Ensure your Firebase project is set up and replace the configuration details in `database.js` with your own Firebase project details.
+
+```javascript
 const firebaseConfig = {
     apiKey: "your-api-key",
     authDomain: "your-auth-domain",
@@ -88,8 +97,14 @@ const saveForm = (name, email) => {
 const getElementVal = (id) => {
     return document.getElementById(id).value;
 }
-Contributions
+```
+
+## Contributions
+
 Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
 
-License
+## License
+
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+---
