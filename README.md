@@ -28,20 +28,6 @@ This project is built using HTML, CSS, and JavaScript. The main files include:
 - **JavaScript**: For handling form submissions and Firebase integration.
 - **Firebase**: For real-time database and secure storage of user data.
 
-## How to Use
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/steez-waitlist-website.git
-   ```
-
-2. **Navigate to the project directory**:
-   ```bash
-   cd steez-waitlist-website
-   ```
-
-3. **Open `index.html` in your preferred browser**.
-
 ## Firebase Configuration
 
 Ensure your Firebase project is set up and replace the configuration details in `database.js` with your own Firebase project details.
@@ -98,10 +84,6 @@ const getElementVal = (id) => {
     return document.getElementById(id).value;
 }
 ```
-
-## Contributions
-
-Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
 
 ## License
 
