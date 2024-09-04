@@ -55,7 +55,7 @@ document.getElementById("waitlistForm").addEventListener("submit", submitForm);
 function submitForm(e) {
     e.preventDefault();
 
-    var name = getElementVal('name');
+    var name = getElementVal('deez');
     var email = getElementVal('email');
 
     saveForm(name, email);
